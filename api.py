@@ -3,8 +3,8 @@ from __future__ import annotations
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from fastapi.responses import HTMLResponse
 
-from .liars_dice import DiceHub
-from .liars_dice_ui import DICE_HTML
+from liars_dice import DiceHub
+from liars_dice_ui import DICE_HTML
 
 app = FastAPI(title="Last Die Standing", version="1.0.0")
 hub = DiceHub()
