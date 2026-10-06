@@ -1,0 +1,5 @@
+# Last Die Standing (Liar's Dice) and Last Signal: web game server
+# Python 3.10+ (the code uses `X | None` type syntax)
+
+fastapi>=0.110,<1.0
+uvicorn[standard]>=0.29,<1.0   # ASGI server; [standard] bundles the `websockets` library needed for /ws/dice
